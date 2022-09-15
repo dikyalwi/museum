@@ -48,18 +48,23 @@
  
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <div id="background-loading">
-       <div class="loader">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-      </div>
+    <div class="intro">
+        <div class="img-logo hide">
+            <img src="assets/img/logo.png" class="img-intro" alt="">
+        </div>
+        <div class="loading">
+              <div class="v-slider-frame mb-5">
+                <ul class="v-slides">
+                  <li class="v-slide">Build Your Dream</li>               
+                </ul>
+              </div>
+              <div class="load">
+                  <div class="garis"></div>
+                  <div class="bar"></div>
+
+              </div>
+
+        </div>
     </div>
 
 
@@ -159,7 +164,7 @@
             </section>
 
             <div class="owl-carousel owl-theme loopingheader" style="width: 100%;">
-              <div class="item ">
+              <div class="item item-header">
                 <div class="sechead sec-header">
                   <div class="row align-items-start">
                     <div class="col-12 text-end ">
@@ -831,7 +836,36 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script type="text/javascript">
+      const body = document.body;
+      const select = (e) => document.querySelector(e);
+      const selectAll = (e) => document.querySelectorAll(e);
+
+      //intro
+
+      const tl = gsap.timeline({defaults: {ease: "power1.out"}});
+
+      window.onload = (event) => {
+        tl.to(".img-intro", {y: "0%", duration: 1, stagger:0.25});
+        tl.to(".bar", {width: "100%", duration: 4, stagger:0.25});
+
+
+        tl.to(".intro", {
+            duration: .8,
+            top: "-100%",
+            ease: "Power4.easeInOut",
+        delay: 0.5
+        });
+
+        tl.fromTo('.menuatas', { opacity: 0, y:50  }, {opacity:1, duration:1, y:0, }, '-=0.5');
+        tl.fromTo('.logo img', { opacity: 0, y:60  }, {opacity:1, duration:1, y:0, }, '-=1');
+        tl.fromTo('.item-header', { opacity: 0, y:60  }, {opacity:0.8, duration:0.8, y:0, }, '-=1');
+        tl.fromTo('.whatapp', { opacity: 0, x: "100%"  }, {opacity:1, duration:1, x:"0%", }, '+=0');
+      };
+
+    </script>
+
    <script>
     var nav = document.querySelector('nav');
     window.addEventListener('scroll', function () {
@@ -900,10 +934,5 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
 
     </script>
 
-    <script>
-        $(window).load(function(){
-            $('#background-loading').fadeOut(3000);
-        });
-    </script>
   </body>
 </html>
