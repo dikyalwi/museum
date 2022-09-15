@@ -581,6 +581,71 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-maps-end -->
       
         <!-- sec-fasilitas start-->
+
+        <section class="fasilitas" id="colection">
+        <div class="container-fluid p-0">
+          
+          <div class="sec-fasilitas">
+         
+          <div class="fasilitas-item">
+                                <div class="row">
+                                  <div class="col-xl-7 p-0">
+                                  <div class="owl-carousel owl-theme owl-loaded slider">
+                                    <div class="owl-stage-outer">
+                                        <div class="owl-stage">
+                                            <div class="owl-item">
+                                              <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
+                                            </div>
+                                            <div class="owl-item">
+                                              <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  <div class="col-xl-5 p-0 position-relative">
+                                    <div class="des-fas">
+                                      
+                                      <?php if($_SESSION['language'] == 'idn'){?>
+                                        <p class="mb-5 tag">Fasilitas</p>
+                                        <h3 class="title mb-4">Ruang Pameran Tetap</h3>
+                                        <p class=" des ">Memamerkan koleksi rajah aksara Bali pada panil-panil kayu, yang menunjukkan keutamaan hakikat aksara Bali, sebagai  rajah emas pemaharddhikaan jiwa, aksara prasada, patung, ukiran, panil,dan pintu-pintu dari berbagai kekayaan yang ada di Bali.</p>
+            
+                                    
+                    <?php } else{?>
+                      <p class="mb-5 tag">Facility</p>
+                      <h3 class="title mb-4">Permanent Exhibition Hall</h3>
+                      <p class=" des ">An exhibition of Balinese scripture on wooden panel which show the virtue of Balinese script as golden script of pemaharddhikaan Jiwa and prasada script, Balinese craft, such as sculpture, engraving, panel, doors and various properties of Bali.</p>
+            
+                                   
+                    <?php }?>
+                                      
+                    </div>
+
+                                    <div class="navigasi2">
+                                      <div class="but cusPrev"><img src="assets/img/panah.svg" class="" alt=""></div>
+                                      <div class="but cusNext"><img src="assets/img/panah.svg" class="" alt=""></div>
+
+                                    </div>
+            
+            
+                                  </div>
+            
+                                </div>
+                              </div>
+
+
+
+
+         
+
+
+          </div>
+
+
+        </section>
+
+
         <section class="fasilitas" id="colection">
           <div class="container-fluid p-0">
       
@@ -612,6 +677,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
                       </div>
                     </div>
                   </div> -->
+       
 
                   <div class="owl-carousel owl-theme owl-loaded slider">
                     <div class="owl-stage-outer">

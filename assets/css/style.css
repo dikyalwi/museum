@@ -993,7 +993,22 @@ hr{
     cursor: pointer;
 	margin-right: 25px;
 }
+.navigasi2{
+	position: absolute;
+	display: block;
+	left: 60px;
+	bottom: 50px;
+	
+}
 
+.navigasi2  [class*=but] {
+	padding: 10px;
+	border: 1px solid #fff;
+	width: 125px;
+	display: inline-block;
+    cursor: pointer;
+	margin-right: 25px;
+}
 .but img{
 	width: 65px !important;
 }
