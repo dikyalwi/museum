@@ -48,6 +48,20 @@
  
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
+    <div id="background-loading">
+       <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+    </div>
+
 
     <header class="header-destop">
       <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-light bg-transparent menuatas">
@@ -136,12 +150,54 @@
   </div>
 
    
+        <section class="header">
+          <div class="container-fluid p-0">
+            
+            <section class="video">
+                <div class="overlay"></div>
+                <video src="https://wiswakarmamuseum.com/assets/video/bg-header.mp4" loop muted autoplay></video>     
+            </section>
 
+            <div class="owl-carousel owl-theme loopingheader" style="width: 100%;">
+              <div class="item ">
+                <div class="sechead sec-header">
+                  <div class="row align-items-start">
+                    <div class="col-12 text-end ">
+                      <p class="text-right text-emas">Wiswakarma sutejo prayojanam suddham
+ 
+                       
+                        </p>
+                        <p class="text-right text-emas">  [ Rig Weda ]</p>
+                    </div>
+                    <div class="col-12 mt-5">
+                      <p class="text-headline">
+                        <span class="txt11">Art Cultur</span>
+                        
+                        <span style="float:right;" class="txt22">
+                          Space
+                        </span>
+                      </p>
+                    </div>
+                    
+                  </div>
+                  <div class="row bawah start-50 translate-middle">
+                    <div class="col-12 ">
+                      <p class="head-lok text-center">BALI, INDONESIA</p>
+                    </div>
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
         <!-- header start -->
     
         <!-- header end -->
 
-        <section class="header">
+       <!--  <section class="header">
           <div class="container-fluid p-0">
             <div class="owl-carousel owl-theme loopingheader" style="width: 100%;">
               <div class="item ">
@@ -205,7 +261,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <div class="whatapp">
           <a href="https://api.whatsapp.com/send/?phone=6281938031722&text=Hi%2C&app_absent=0" target="_blank" rel="noopener noreferrer">
@@ -845,9 +901,9 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
     </script>
 
     <script>
-      $(document).ready(function(){
-      $(".preloader").fadeOut();
-      })
+        $(window).load(function(){
+            $('#background-loading').fadeOut(3000);
+        });
     </script>
   </body>
 </html>
