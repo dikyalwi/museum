@@ -25,25 +25,27 @@
     <title>Wiswakarma Museum</title>
     <link rel="icon" href="assets/img/icon.png">
 
-
+    <link rel="stylesheet" type="text/css" href="assets/css/locomotive-scroll.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/docs.theme.min.css">
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="assets/js/jquery-11.0.min.js"></script>
+
     <script src="assets/vendor/owlcarousel/jquery.min.js"></script> 
     <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
 
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
+
+
   </head>
  
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -53,17 +55,17 @@
             <img src="assets/img/logo.png" class="img-intro" alt="">
         </div>
         <div class="loading">
-              <div class="v-slider-frame mb-5">
-                <ul class="v-slides">
-                  <li class="v-slide">Build Your Dream</li>               
-                </ul>
+              <div class="loader">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
               </div>
-              <div class="load">
-                  <div class="garis"></div>
-                  <div class="bar"></div>
-
-              </div>
-
         </div>
     </div>
 
@@ -277,13 +279,14 @@
         </div>
 
 
-        <div id="profile">
+        <div id="profile" data-scroll-container>
+
            <!-- sec-desc-1 1 start -->
-        <section class="desc1" >
+        <section class="desc1" data-scroll-section>
           <div class="container-fluid p-5">
-            <div class="sec-desc-1">
-              <div class="container-fluid p-0">
-                <div class="img-logo">
+            <div class="sec-desc-1" data-scroll>
+              <div class="container-fluid p-0" >
+                <div class="img-logo" data-scroll-sticky>
                   <img src="assets/img/logo.png" alt="" class="pt-5 img-fluid">
                 </div>
                 <?php if($_SESSION['language'] == 'idn'){?>
@@ -298,6 +301,17 @@
           </div>
         </section>
         <!-- sec-desc-1 1 end -->
+
+        <div data-scroll-container>
+    <div data-scroll-section>
+        <h1 data-scroll>Hey</h1>
+        <p data-scroll>👋</p>
+    </div>
+    <div data-scroll-section>
+        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
+        <p data-scroll data-scroll-speed="2">😬</p>
+    </div>
+</div>
         
         <!-- sec-latar-belakang start -->
      
@@ -583,74 +597,57 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-fasilitas start-->
 
         <section class="fasilitas" id="colection">
-        <div class="container-fluid p-0">
-          
-          <div class="sec-fasilitas">
-         
-          <div class="fasilitas-item">
-                                <div class="row">
-                                  <div class="col-xl-7 p-0">
-                                  <div class="owl-carousel owl-theme owl-loaded slider">
-                                    <div class="owl-stage-outer">
-                                        <div class="owl-stage">
-                                            <div class="owl-item">
-                                              <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
-                                            </div>
-                                            <div class="owl-item">
-                                              <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  </div>
-                                  <div class="col-xl-5 p-0 position-relative">
-                                    <div class="des-fas">
-                                      
-                                      <?php if($_SESSION['language'] == 'idn'){?>
-                                        <p class="mb-5 tag">Fasilitas</p>
-                                        <h3 class="title mb-4">Ruang Pameran Tetap</h3>
-                                        <p class=" des ">Memamerkan koleksi rajah aksara Bali pada panil-panil kayu, yang menunjukkan keutamaan hakikat aksara Bali, sebagai  rajah emas pemaharddhikaan jiwa, aksara prasada, patung, ukiran, panil,dan pintu-pintu dari berbagai kekayaan yang ada di Bali.</p>
-            
-                                    
-                    <?php } else{?>
-                      <p class="mb-5 tag">Facility</p>
-                      <h3 class="title mb-4">Permanent Exhibition Hall</h3>
-                      <p class=" des ">An exhibition of Balinese scripture on wooden panel which show the virtue of Balinese script as golden script of pemaharddhikaan Jiwa and prasada script, Balinese craft, such as sculpture, engraving, panel, doors and various properties of Bali.</p>
-            
-                                   
-                    <?php }?>
-                                      
-                    </div>
+          <div class="container-fluid p-0">
+            <div class="sec-fasilitas">
+              <div class="fasilitas-item">
+                  <div class="row">
+                      <div class="col-xl-7 p-0">
+                        <div class="owl-carousel owl-theme owl-loaded slider">
+                          <div class="owl-stage-outer">
 
-                                    <div class="navigasi2">
-                                      <div class="but cusPrev"><img src="assets/img/panah.svg" class="" alt=""></div>
-                                      <div class="but cusNext"><img src="assets/img/panah.svg" class="" alt=""></div>
-
-                                    </div>
-            
-            
-                                  </div>
-            
-                                </div>
+                            <div class="owl-stage">
+                              <div class="owl-item">
+                                <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
                               </div>
+                              <div class="owl-item">
+                                <img src="assets/img/fas/slide1.jpg" class="img-slide" alt="">
+                              </div>
+                            </div>
 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-5 p-0 position-relative">
+                        <div class="des-fas">        
+                          <?php if($_SESSION['language'] == 'idn'){?>
+                            <p class="mb-5 tag">Fasilitas</p>
+                            <h3 class="title mb-4">Ruang Pameran Tetap</h3>
+                            <p class=" des ">Memamerkan koleksi rajah aksara Bali pada panil-panil kayu, yang menunjukkan keutamaan hakikat aksara Bali, sebagai  rajah emas pemaharddhikaan jiwa, aksara prasada, patung, ukiran, panil,dan pintu-pintu dari berbagai kekayaan yang ada di Bali.</p>
+                            <?php } else{?>
+                            <p class="mb-5 tag">Facility</p>
+                            <h3 class="title mb-4">Permanent Exhibition Hall</h3>
+                            <p class=" des ">An exhibition of Balinese scripture on wooden panel which show the virtue of Balinese script as golden script of pemaharddhikaan Jiwa and prasada script, Balinese craft, such as sculpture, engraving, panel, doors and various properties of Bali.</p>
+                          <?php }?>
+                        </div>
 
-
-
-         
-
-
-          </div>
-
-
+                        <div class="navigasi2">
+                          <div class="but cusPrev bek"><img src="assets/img/panah.svg" class="img-bek" alt=""></div>
+                          <div class="but cusNext"><img src="assets/img/panah.svg" class="" alt=""></div>
+                        </div>
+                      </div>
+            
+                  </div>
+                </div>
+              </div>
+            </div>
         </section>
 
 
-        <section class="fasilitas" id="colection">
+       <!--  <section class="fasilitas" id="colection">
           <div class="container-fluid p-0">
       
                 <div class="sec-fasilitas">
-                  <!-- <div class="row">
+                  <div class="row">
                     <div class="col-md-7 p-0">
                         <div class="owl-carousel owl-theme owl-loaded loopingfasilitas">
                         <div class="item">
@@ -676,7 +673,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
                         </div>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
        
 
                   <div class="owl-carousel owl-theme owl-loaded slider">
@@ -788,10 +785,10 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
                             </div></div>
                         </div>
                     </div>
-                    <!-- <div class="owl-nav">
+                    <div class="owl-nav">
                         <div class="owl-prev customPrevBtn">prev</div>
                         <div class="owl-next customNextBtn">next</div>
-                    </div> -->
+                    </div>
                    
                 </div>
 
@@ -801,7 +798,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
                 </div>
               
           </div>
-        </section>
+        </section> -->
         <!-- sec-fasilitas end-->
 
         <!-- sec-location start -->
@@ -900,7 +897,9 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
 
 
 
-
+    <!-- <script type="text/javascript" src="assets/js/jquery-11.0.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script type="text/javascript">

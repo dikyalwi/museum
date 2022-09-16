@@ -4,7 +4,9 @@
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 }
-
+body{
+  overflow-x: hidden;
+}
 /*preload*/
 
 .intro {
@@ -1004,7 +1006,7 @@ hr{
 .navigasi2  [class*=but] {
 	padding: 10px;
 	border: 1px solid #fff;
-	width: 125px;
+	width: 120px;
 	display: inline-block;
     cursor: pointer;
 	margin-right: 25px;
@@ -1019,6 +1021,13 @@ hr{
 }
 .cusNext  img{
 	float: right;
+}
+.bek{
+	padding-top: -35px !important;
+	height: 35px;
+}
+.img-bek{
+	padding-top: 25px;
 }
 
 
