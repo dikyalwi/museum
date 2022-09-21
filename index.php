@@ -41,14 +41,14 @@
     <script src="assets/vendor/owlcarousel/jquery.min.js"></script> 
     <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
 
-
+    <!-- <script type="text/javascript" src="assets/js/jquery-11.0.min.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script> -->
 
 
   </head>
  
-  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" >
 
     <div class="intro">
         <div class="img-logo hide">
@@ -156,20 +156,18 @@
      
   </div>
 
-   
-        <section class="header">
+  <div class="main-wrap" data-scroll-container>
+
+  
+        <section class="header2" data-scroll-section>
           <div class="container-fluid p-0">
             
-            <section class="video">
+            <div class="video">
                 <div class="overlay"></div>
                 <video src="https://wiswakarmamuseum.com/assets/video/bg-header.mp4" loop muted autoplay></video>     
-            </section>
+            </div>
 
-            <div class="owl-carousel owl-theme loopingheader" style="width: 100%;">
-              <div class="item item-header">
-                <div class="sechead sec-header">
-                  <div class="row align-items-start">
-                    <div class="col-12 text-end ">
+            <div class="col-12 text-end ">
                       <p class="text-right text-emas">Wiswakarma sutejo prayojanam suddham
  
                        
@@ -178,7 +176,7 @@
                     </div>
                     <div class="col-12 mt-5">
                       <p class="text-headline">
-                        <span class="txt11">Art Cultur</span>
+                        <span class="txt11">Art Culture</span>
                         
                         <span style="float:right;" class="txt22">
                           Space
@@ -186,17 +184,14 @@
                       </p>
                     </div>
                     
-                  </div>
+              
                   <div class="row bawah start-50 translate-middle">
                     <div class="col-12 ">
                       <p class="head-lok text-center">BALI, INDONESIA</p>
                     </div>
                     
                   </div>
-
-                </div>
-              </div>
-            </div>
+          
 
           </div>
         </section>
@@ -279,14 +274,14 @@
         </div>
 
 
-        <div id="profile" data-scroll-container>
+        
 
            <!-- sec-desc-1 1 start -->
         <section class="desc1" data-scroll-section>
           <div class="container-fluid p-5">
             <div class="sec-desc-1" data-scroll>
               <div class="container-fluid p-0" >
-                <div class="img-logo" data-scroll-sticky>
+                <div class="img-logo" >
                   <img src="assets/img/logo.png" alt="" class="pt-5 img-fluid">
                 </div>
                 <?php if($_SESSION['language'] == 'idn'){?>
@@ -302,20 +297,11 @@
         </section>
         <!-- sec-desc-1 1 end -->
 
-        <div data-scroll-container>
-    <div data-scroll-section>
-        <h1 data-scroll>Hey</h1>
-        <p data-scroll>👋</p>
-    </div>
-    <div data-scroll-section>
-        <h2 data-scroll data-scroll-speed="1">What's up?</h2>
-        <p data-scroll data-scroll-speed="2">😬</p>
-    </div>
-</div>
+   
         
         <!-- sec-latar-belakang start -->
      
-        <section class="latarbelakang" >
+        <section class="latarbelakang" data-scroll-section >
           <div class="container-fluid p-0">
               <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -449,7 +435,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         
 
 
-        <section class="sec-desc-2" id="profile">
+        <section class="sec-desc-2" id="profile" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="row">
               <div class="col-lg-4 px-4">
@@ -507,14 +493,14 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-desc-2 end -->
 
 
-        </div>
+        
 
 
        
         <!-- sec-banner start -->
 
 
-        <section class="kategori" id="activity">
+        <section class="kategori" id="activity" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="sec-banner" style="background: url(assets/img/kat1.jpg) no-repeat  ;">
               <div>
@@ -561,7 +547,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-banner end -->
 
         <!-- sec-maps start-->
-        <section class="maps d-none">
+        <section class="maps d-none" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="sec-maps">
               <h1 class="mb-5">MAP WISWAKARMA MUSEUM</h1>
@@ -596,7 +582,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
       
         <!-- sec-fasilitas start-->
 
-        <section class="fasilitas" id="colection">
+        <section class="fasilitas" id="colection" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="sec-fasilitas">
               <div class="fasilitas-item">
@@ -802,7 +788,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-fasilitas end-->
 
         <!-- sec-location start -->
-        <section class="lokasi">
+        <section class="lokasi" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="sec-loc">
               <div class="row">
@@ -827,7 +813,7 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
         <!-- sec-location end -->
 
         <!-- sec-footer start -->
-        <section class="footer" id="contact">
+        <section class="footer" id="contact" data-scroll-section>
           <div class="container-fluid p-0">
             <div class="sec-footer">
               <div class="row position-relative">
@@ -890,44 +876,27 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
             </div>
           </div>
         </section>
+
         <!-- sec-footer end -->
 
+  </div>
 
 
 
 
-
-    <!-- <script type="text/javascript" src="assets/js/jquery-11.0.min.js"></script> -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js" crossorigin="anonymous" ></script>
+   
     <script type="text/javascript" src="assets/js/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript">
-      const body = document.body;
-      const select = (e) => document.querySelector(e);
-      const selectAll = (e) => document.querySelectorAll(e);
 
-      //intro
-
-      const tl = gsap.timeline({defaults: {ease: "power1.out"}});
-
-      window.onload = (event) => {
-        tl.to(".img-intro", {y: "0%", duration: 1, stagger:0.25});
-        tl.to(".bar", {width: "100%", duration: 4, stagger:0.25});
-
-
-        tl.to(".intro", {
-            duration: .8,
-            top: "-100%",
-            ease: "Power4.easeInOut",
-        delay: 0.5
-        });
-
-        tl.fromTo('.menuatas', { opacity: 0, y:50  }, {opacity:1, duration:1, y:0, }, '-=0.5');
-        tl.fromTo('.logo img', { opacity: 0, y:60  }, {opacity:1, duration:1, y:0, }, '-=1');
-        tl.fromTo('.item-header', { opacity: 0, y:60  }, {opacity:0.8, duration:0.8, y:0, }, '-=1');
-        tl.fromTo('.whatapp', { opacity: 0, x: "100%"  }, {opacity:1, duration:1, x:"0%", }, '+=0');
-      };
 
     </script>
 
@@ -943,59 +912,11 @@ disruption era of cultivation, urban culture, modernization, artificial intellig
    </script>
    
    
-   <script>
-      $(document).ready(function() {
-        var owl = $('.loopingheader');
-        owl.owlCarousel({
-          items:1,
-          loop: true,
-          nav: false,
-          dots:false,
-          autoplay:true,
-          autoplayTimeout:9000,
-          autoplaySpeed:2500,
-          smartSpeed:5000,
-          singleItem:true,
-          autoplayHoverPause:true,
-          touchDrag  : false,
-     mouseDrag  : false
 
-        });
-        
-
-      })
-    </script>
 
 
     <script>
-      $(document).ready(function() {
-        var owl2 = $('.slider');
-        owl2.owlCarousel({
-          items:1,
-          loop: true,
-          autoplay:false,
-          navs: true,
-          autoplaySpeed:1000,
-          smartSpeed:1500,
-          margin : 12,
-          dots:false,
-          touchDrag  : false,
-     mouseDrag  : false
-
-          
-         
-        });
-        $('.cusNext').click(function() {
-            owl2.trigger('next.owl.carousel');
-        })
-        // Go to the previous item
-        $('.cusPrev').click(function() {
-            // With optional speed parameter
-            // Parameters has to be in square bracket '[]'
-            owl2.trigger('prev.owl.carousel', [600]);
-        })
-
-      });
+     
 
     </script>
 
